@@ -652,7 +652,7 @@ img{
 
 .list-img-link{
     display: block;
-    transition: color var(--one-time) var(--two-time) ;
+    transition: box-shadow var(--one-time) var(--two-time) ;
 }
 
 .list-img-link:hover,
@@ -725,6 +725,44 @@ img{
     color: var(--button-color);
 }
 
+
+
+/* PORTFOLIO LIST */
+
+.list-portfolio {
+    position: relative;
+    width: 370px;
+    height: 294px;
+    overflow: hidden;
+}
+
+.web-site {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    transform: translateY(100%);     
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.555;    
+    letter-spacing: 0.03em;
+    padding: 63px 24px;
+    
+    color: var(--whrite);
+    background-color: rgba(33, 150, 243, 0.9);
+    transition: transform var(--one-time) var(--two-time);
+}
+
+.list-img-link:hover .web-site,
+.list-img-link:focus .web-site {
+    /* opacity: 1; */
+    transform: translateY(0%);    
+}
+
 /* ---------------Модаль-------------- */
 
 .backdrop {
@@ -780,40 +818,4 @@ img{
     
 
     cursor: pointer;
-}
-
-/* PORTFOLIO LIST */
-
-.list-portfolio {
-    position: relative;
-    width: 370px;
-    height: 294px;
-    overflow: hidden;
-}
-
-.web-site {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
-    transform: translateY(100%);     
-
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.555;    
-    letter-spacing: 0.03em;
-    padding: 63px 24px;
-    
-    color: var(--whrite);
-    background-color: rgba(33, 150, 243, 0.9);
-    transition: transform var(--one-time) var(--two-time);
-}
-
-.list-img-link:hover .web-site,
-.list-img-link:focus .web-site {
-    /* opacity: 1; */
-    transform: translateY(0%);    
 }
