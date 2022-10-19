@@ -742,7 +742,7 @@ img{
 }
 
 .modal {
-    position: absolute;
+    position:   relative;
     top: 50%;
     left: 50%;       
     width: 528px;
@@ -768,12 +768,8 @@ img{
     top: 8px;
     right: 8px;
 
-    background-color:transparent;
+    background-color:var(--whrite);
     border: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
-    0px 1px 1px rgba(0, 0, 0, 0.14), 
-    0px 2px 1px rgba(0, 0, 0, 0.2); 
-    fill:black;
 
     cursor: pointer;
 }
